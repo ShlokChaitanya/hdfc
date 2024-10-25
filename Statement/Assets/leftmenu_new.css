@@ -1,0 +1,254 @@
+/* Commented by pp
+body {	
+background: #F5F8FA;
+margin-top: 8px; 
+margin-right: 0px; 
+margin-bottom: 4px; 
+margin-left: 8px;
+}
+*/
+
+/* added by pp */
+
+body {	
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+margin:0;
+padding:0;
+/*width:163px;*/
+/*background: url("/default/gif/ltColBg.png") repeat-y -16px top;*/ /*commented by snapwork*/
+}
+
+form {	/*created by snapwork 11 Feb */
+	background: #fff;
+	margin:0;
+}
+
+
+/* Commented by pp
+.menu {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 0.7em;
+}
+*/
+
+/* Commented by pp
+a:link {  color: #333399; text-decoration: underline;}
+a:hover {  color: black; text-decoration: none;}
+a:active {  color: #333399; text-decoration: underline;}
+a:visited {  color: #333399; text-decoration: underline;}
+*/
+
+/* Commented by pp
+.selected { 
+	color: black;
+    	font-size: 0.84em;
+    	FONT-FAMILY: Arial, Helvetica, sans-serif;
+    	BACKGROUND: white
+}
+*/
+
+/* Commented by pp
+h1 { 
+FONT-FAMILY: Arial, Helvetica, sans-serif;
+font-size: 0.7em; 
+font-weight: bold; 
+margin-top: 8px; 
+margin-top: 12px;
+margin-right: 0px; 
+margin-bottom: 1px; 
+margin-left: 1px; 
+}
+*/
+
+/* added by pp */
+a {
+	text-decoration: none;
+}
+
+/* added by pp */
+
+a:focus { outline: none; }
+
+/* added by pp */
+td{
+	padding:0;      /* 29/1/13 for remove lefmenu top bottom 1px space */
+}
+/*.menu a,
+.selected a{
+	display: block;
+	font-size:11px;
+	color: #004a8f;
+	padding: 4px 12px 4px 10px;
+	}*/												/* old css */
+	
+.menu a, .selected a {								/* changes done by snapwork 28/1/13 */
+    background: none repeat scroll 0 0 #F5F7F9;
+    border-bottom: 1px solid #CED2DF;
+    color: #023369;
+    display: block;
+    font-size: 12px;
+    padding: 8px 12px 8px 10px;
+	text-decoration:none;
+}
+
+td.menu { padding:0; }  /*  new added by snapwork 28/1/13 */ 
+
+/* added by pp */
+.menu  a:hover{
+	background-image: none;
+	background: none repeat scroll 0 0 #E7EDF3; /*  new added by snapwork 28/1/13 */ 
+	text-decoration: none;	/* changes done by snapwork 28/1/13 */
+    }
+    
+/* added by pp */
+.menu a:hover { 
+	 /*border: none;*/ 		/* changes done by snapwork 28/1/13 */
+	 }
+
+/* added by pp */
+td.selected{
+	padding: 0;
+   /* background:url(/default/gif/sidebarLlBg.png) repeat-y right top; */
+   background:none; /* changes done by snapwork 28/1/13 */
+	}
+
+/* added by pp */	
+td.selected a.selected{
+	display: block;
+	color: #333;
+	font-weight:bold; /*  new added by snapwork 28/1/13 */
+    background:url(/default/gif/active.png) no-repeat right center #fff;   /* 28/1/13 bg-color:#fff; new added */
+	}	
+/* added by pp */
+/*h1 {
+	font-size: 12px; 
+    margin: 0;
+   	padding: 5px 2px 5px 8px;
+   	color: #333;
+    border-top: 1px solid #bfcee3;
+    background:url(/default/gif/h1-bg.png) repeat-y right top; 
+}*/
+
+h1 {	/* changes done by snapwork 28/1/13 */
+    background: none repeat scroll 0 0 #E7EDF3;
+    border-top: 0 none;
+    color: #023369;
+    font-size: 12px;
+    margin: 0;
+    padding: 8px 2px 8px 8px;
+	border-bottom:1px solid #CED2DF;
+}
+
+/* no change */
+strong { 
+	color: black; 
+	font-weight: bold; 
+}
+
+/* added by pp */
+.mainTabs a{
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004a8f;
+	padding: 8px 8px;
+}
+
+/* added by pp */
+.mainTabs a:hover,
+.mainTabs a.selected{
+	color: #333;
+}
+
+
+/* added by pp */
+.separator{
+	border-bottom: 1px dotted #7c7d7e;
+}
+
+/************** New left Nav ************/
+
+html,body,form,#nav { height:100%; }
+.overflowAuto{ overflow:auto; overflow-x:hidden; width:228px; height:100%;}
+.menu-drop { width:213px; border-right:1px solid #ced2df; height:100%; position:relative; }
+.menu-drop .vLine { background:#ced2df; position:absolute; right:0; top:0; height:100%; border:0 none; width:1px; }
+.accordion, .slide .side-nav { margin:0; list-style:none outside; padding:0;}
+.accordion li, .accordion li a { display:block; vertical-align:top; }
+.accordion .menu-title { background:url(../gif/menu-title.png) repeat-x left top #04366e; font-size:16px; color:#fff; padding: 5px 13px 6px; overflow:hidden;  }
+.accordion .menu-summary { background:#f5f7f9; margin:0; padding:0; height: 55px;display:table;width:100%; }
+.accordion .menu-summary a { padding:12px 13px 18px; color:#333333; font-size:14px; word-wrap: break-word; /*border-top:1px solid #e7edf3;*/ min-height: 32px;display:table-cell;vertical-align:middle;}
+/*\*/ * html .accordion .menu-summary {
+position:relative;
+} /**/
+/*\*/ * html .accordion .menu-summary a span{
+position: relative; top: -50%;
+}/**/
+/*\*/ * html .accordion .menu-summary a{
+position: absolute; top: 50%;
+}/**/
+
+.accordion a span.icon { width:55px; float:left; }
+.accordion a i { background:no-repeat center 0; display:block; width:50px; height:40px; }
+
+.accordion a strong { font-weight:normal; color:#333333; display:inline;  }
+.menu-summary.active { background:#fff !important; }
+.menu-summary.active a strong { color:#000; }
+.accordion .menu-summary a strong.oneLine, .accordion .side-nav a strong.oneLine { position:relative; top:10px; float:left; }
+
+.accord-menu { background:#e2effa; position:relative; float:left; width:100%; }
+.accord-menu .slide { display:none; position:relative; vertical-align:top; float:left; width:100%; }
+.accord-menu a { padding:19px 22px 19px 12px; color:#333333; font-size:14px; word-wrap: break-word; position:relative;  border-top: 1px solid #0c427f; }/*pranali*/
+.accord-menu.last-child a{border-bottom:1px solid #0c427f;}
+.accord-menu a {*position:static /* !important; */}
+.accord-menu a strong { text-transform:capitalize; font-size:14px;}/*pranali*/
+.accord-menu .arrowIcon { background:url(../gif/arrowIcon.png) no-repeat center center; width:11px; height:12px; position:absolute; top:0; right:9px; margin-top:0; display:block; height:100%; *height:56px; }
+.accord-menu .btmBluArw .arrowIcon { background-image:url(../gif/arrowBtmIcon.png); width:12px; }
+
+.slide .side-nav { border-top:1px solid #0c427f; float:left; width:100%; }/*pranali*/
+.slide .side-nav li { background:#f5f7f9; border-bottom:1px solid #cdd1df; /*float:left;*/ width:100%;height:55px;display: table;overflow: hidden; }
+.slide .side-nav li.active { background:#fff; }
+.slide .side-nav li.active a strong { color:#000; }
+.slide .side-nav li a { border-bottom:0 none; border-top:0; /* height: 36px; */ padding:11px 15px 11px 15px;display: table-cell; vertical-align: middle;}
+/*\*/ * html .slide .side-nav li {
+position:relative;
+} /**/
+/*\*/ * html .slide .side-nav li a span{
+position: relative; top: -50%;
+}/**/
+/*\*/ * html .slide .side-nav li a {
+position: absolute; top: 50%;
+}/**/
+.slide .side-nav li a strong { text-transform:capitalize; }
+.slide .side-nav li:last-child, .slide .side-nav li:last-child a { border-bottom:0 none; }
+
+.slide .side-nav li a:link{ background-color: transparent !important;}    
+.slide .side-nav li a:visited{background-color: transparent !important;} 
+.slide .side-nav li a:hover{background-color: transparent !important;}  
+.slide .side-nav li a:active{background-color: transparent !important;} 
+.slide .side-nav li {cursor:pointer; }
+
+
+
+
+/*demat end*/
+/*debit card start*/
+
+/*Loanmenu end*/
+
+
+.EnableLiBorder{border-bottom:1px solid #cdd1df !important;margin-bottom: 1px;}
+/* .EnableLiBorder a { border-bottom:1px solid #cdd1df !important;} */
+/*\*/ * html .EnableLiBorder{
+/* margin-bottom:15px; */
+} /**/
+
+.lastCustomLi{
+     border-bottom: 1px solid #cdd1df !important;
+}
+
+/*\*/ * html .disableMarginBottom{
+/* margin-bottom:0px; */
+} /**/
+
+.singleLine {/* padding-top: 8px;padding-bottom: 8px;display:block;  */}

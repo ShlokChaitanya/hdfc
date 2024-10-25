@@ -1,0 +1,27 @@
+.loginData{ width:245px;}
+.main-container{padding:0;}
+.container .welcmewrap{ margin-bottom:20px;}
+html, body {height: 100%;}
+.login-main {min-height: 100%; margin-bottom: -56px;}
+.login-main:after {content: ""; display: block;}
+.login-main:after {height: 56px;}
+.multiline-msg:before, .multiline-msg:after{ content:""; display:table}
+.multiline-msg:after{ clear:both}
+.reqfield {border: 1px solid rgba(255, 0, 0, 1);}
+.section-form-control .dtl-info:first-child { margin-top: 0px;}
+.section-form-control .dtl-info .label-text {width: 165px;}
+.no-cap {text-transform: lowercase !important;}
+.dtl-info .label-text {color: #939393;width: 145px;float: left;text-align: left;font-weight: 400;padding-right: 24px!important;text-transform: capitalize!important;font-size: 14px;}
+.popup-contContr .section-form-control .dtl-info .data {width: 340px;}
+.nomatch{ position:relative; padding-left:50px;}
+.nomatch i{ position:absolute; left:0; top:10px;}
+.red-text{color:rgb(255, 0, 0) !important; }
+.error-contr .close-btn {float: right; margin-top: 15px;}
+.error-contr .cell-cont p {color: #E5655A; font-weight: 600; font-size: 20px; margin-top: 12px;display: inline-block;}
+.multiline-msg .error-contr .cell-cont {display: inline-block;vertical-align: middle;}
+.fleft {float: left;}
+.multiline-msg .error-contr {width: 100%;border-bottom: 2px solid rgba(229, 101, 90, 1);padding: 10px 0;background: rgba(255, 229, 226, 1);display: table;}
+.multiline-msg .error-contr .cell-cont p.submsg {font-size: 14px;}
+.multiline-msg .error-contr .cell-cont p {display: block;}
+
+.netwrapper .lablefield {font-size:14px;width: 160px;}

@@ -1,0 +1,35 @@
+﻿@media screen and (max-width:768px) {
+.loginData{ width:200px;}
+.login-btn{ width:200px!important}
+.lablefield.ibvt{ padding-right:0px}
+.footer-login{ position:relative;}
+.section-form-control .dtl-info .label-text {width: 145px;}
+.section-form-control .dtl-info .data {width: 340px !important;}
+
+.netwrapper .lablefield {width:120px}
+}
+@media screen and (max-width:540px){
+.lablefield.ibvt{ display:inline-block; width:auto!important; padding-right:20px; float:left;}
+.inputfield.ibvt.inputfield{ margin:0px!important}
+.section-form-control .dtl-info .label-text {width: 165px;}
+.section-form-control .dtl-info .data {width: 320px !important;}
+.popup-outerContr{ top:10px;}
+.label-text.nolabel {display: none;}
+.lablefield.ibvt{width:180px !important;}
+.loginData {width:300px}
+}
+@media screen and (max-width:480px){
+.lablefield.ibvt{width:100%!important;}
+.loginData {width:320px}
+
+}
+
+@media screen and (max-width:320px){
+.section-form-control .dtl-info .data {
+    width: 100% !important;
+}
+.loginData {width:100%}
+.entered-text { padding-left:20px;}
+
+.login-btn {width: 100%!important;}
+}

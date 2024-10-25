@@ -1,0 +1,319 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/netbanking/jsdir/b3ab5101.js" async="" onload="invokeBiocatch()"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to HDFC Bank NetBanking</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="application/x-www-form-urlencoded; charset=iso-8859-1">
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="CACHE-CONTROL" content="private">
+    <meta http-equiv="CACHE-CONTROL" content="no-store">
+    <meta http-equiv="CACHE-CONTROL" content="must-revalidate">
+    <meta http-equiv="CACHE-CONTROL" content="post-check=0,pre-check=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+
+
+    <link href="/netbanking/css/vkb.css" rel="stylesheet">
+    <link href="/netbanking/css/bootstrap.min.css?v=1" rel="stylesheet">
+    <link href="/netbanking/css/google-loginapi.css" rel="stylesheet">
+    <link href="/netbanking/css/fontello.css" rel="stylesheet">
+    <link href="/netbanking/css/style.css" rel="stylesheet">
+    <link href="/netbanking/css/style-login.css" rel="stylesheet">
+    <link href="/netbanking/css/responsive.css" rel="stylesheet">
+    <link href="/netbanking/css/login-responsive.css" rel="stylesheet">
+    <link href="/netbanking/css/slick.css" type="text/css" rel="stylesheet">
+
+    <script language="JavaScript" src="/netbanking/"></script>
+	<script language="JavaScript" src="/netbanking//jsdir/jquery-migrate.js"></script>
+	<script type="text/javascript" src=/netbanking//jsdir/script.js"></script>
+    <script src="/netbanking/"></script> <!--Adu :FLEXPROD-103 jquery version update -->
+
+    <script language="JavaScript" src="/netbanking/"></script>
+    <script language="JavaScript" src="/netbanking//jsdir/des.js"></script>
+    <script language="JavaScript" src="/netbanking//jsdir/HmacSHA256.js"></script>
+    <script language="JavaScript" src="/netbanking//jsdir/hashtable.js"></script>
+    <!--Anant Mane :CCR482- RSA Finger Printing Device  -->
+    <script language="JavaScript" src="/netbanking/"></script> <!-- Anant Mane :CCR482- RSA Finger Printing Device-->
+    <script language="JavaScript" src="/netbanking//jsdir/RS_01_eng_ext.js?v=1"></script>
+
+    <script src="//assets.adobedtm.com/80673311e435/b39b382d3616/launch-583aec08059f.min.js"></script>
+    <script src="https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js"
+        async=""></script>
+</head>
+
+<body onload="init();" id="pageBody" marginwidth="0" marginheight="0">
+    <div class="main-container login-main">
+        <form name="frmLogin" action="entry" class="login" method="post" target="_top" autocomplete="off">
+
+            <input type="hidden" name="fldAppId" value="RS">
+            <input type="hidden" name="fldDevicePrint" value=""> <!-- Anant Mane : RSA device print-->
+            <input type="hidden" name="fldTxnId" value="LGN">
+            <input type="hidden" name="fldScrnSeqNbr" value="01">
+            <input type="hidden" name="fldLangId" value="eng">
+            <input type="hidden" name="fldDeviceId" value="01">
+            <input type="hidden" name="fldWebServerId" value="YG">
+            <input type="hidden" name="fldAppServerId" value="ZZ">
+            <input type="hidden" name="fldRandomNumber" value="">
+            <!--added by sandeep-->
+            <input type="hidden" name="fldRefPage" value="rsloginhtml">
+            <input type="hidden" name="fldRefVal" value="*">
+            <!--02/03/2015	RogerG	ENH CCR 431: Retrieve Customer Id  Start			 -->
+            <!--<input type="hidden" name="fldLoginUserCss" value="default"/>-->
+            <!--02/03/2015	RogerG	ENH CCR 431: Retrieve Customer Id  end /			 -->
+
+            <!-- Navigation -->
+
+            <!-- Page Content -->
+
+            <div class="welcmewrap center col-sm-12">
+                <!--<div class="hdfclogoblk"> <img src="gif/logo.png" class="width100" alt="" /> </div>-->
+
+                <div class="hdfcwelcmetxt" id="hdfcwelcmetxtId"> Welcome to HDFC Bank NetBanking </div>
+                <!--FLEXENH-426-18/02/2020-Roshni Soni-EPI Split Page-->
+                <img src="/netbanking/gif/Logo.svg"
+                    alt="HDFC Bank"><!-- 27/12/2023 vk FLEXENH-945: HDFC Now Branding on Login Page -->
+
+            </div>
+
+            <div class="multiline-msg mB10"></div>
+
+            <div class="container">
+                <div class="welcmewrap">
+                    <div class="welcomesec1">
+                        <div class="hdfcstatictxt mB20">Login to NetBanking</div>
+                        <div class="netwrapper">
+                            <div class="clearfix"></div>
+                            <!-- 
+								<div class="col-sm-6 leftwrap fl">
+									<div class="mB20">
+									<div class="lablefield ibvt">
+										Customer ID/ User ID 
+									</div>
+									<div class="inputfield ibvt loginData">
+										//<input type="text" class="form-control text-muted" value=""> 
+										<input id="UserId" type="text" class="form-control UserNameId text-muted" name="fldLoginUserId" maxlength="15" size="13" onkeypress = "return fSubmit(event);" value="" oncopy="return false" ondrag="return false" ondrop="return false" onpaste="return false" />
+										<span><a href="javascript:void(0)" onclick="return fretrieveCustId();">Forgot Customer ID</a></span>           
+									</div>
+								</div> 
+							-->                            
+                            <div class="col-sm-6 leftwrap fl">
+                                <div class="mB20">
+                                    <div class="lablefield ibvt">Customer ID/ User ID</div>
+                                    <div class="inputfield ibvt loginData">
+                                        <input type="text" id="UserNameId"
+                                            class="form-control text-muted" style="width: 245px;height: 30px"
+                                            name="fldLoginUserId" maxlength="15" size="13"
+                                            onkeypress="return fSubmit(event);" value="" oncopy="return false"
+                                            ondrag="return false" ondrop="return false" onpaste="return false"
+                                            onfocus="return false"> <span><a href="javascript:void(0)"
+                                                onclick="return fretrieveCustId();">Forgot Customer ID</a></span></div>
+                                </div>
+                                <div class="mB20">
+                                    <div class="lablefield ibvt blank"></div>
+                                    <div class="inputfield ibvt loginData"><a class="btn btn-primary login-btn">CONTINUE</a></div>
+                                </div>
+                                <div style="background-color:#e2effa;padding:10px;">Dear Customer,<br> Welcome to the
+                                    new login page of HDFC Bank NetBanking. <br> Its lighter look and feel is designed
+                                    to give you the best possible user experience. Please continue to login using your
+                                    customer ID and password.</div>
+                                <div class="hdfcstatictxt mB20">Don't have a HDFC Bank Savings Account?</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="hdfcsmalltxt mB20"><span class="lightbluecolor"><a
+                                                            href="javascript:void(0)"
+                                                            onclick="return window.open(&quot;https://netportal.hdfcbank.com/login#/openMarketLoginCC&quot;);">Credit
+                                                            Card only? Login here</a></span></div>
+                                            </td>
+                                            <td style="padding-left:10px;">
+                                                <div class="hdfcsmalltxt mB20"><span class="lightbluecolor"><a
+                                                            href="javascript:void(0)"
+                                                            onclick="return window.open(&quot;https://portal.hdfc.com/login&quot;);">HDFC
+                                                            Ltd. Home Loans? Login here</a></span></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="hdfcsmalltxt mB20"><span class="lightbluecolor"><a
+                                                            href="javascript:void(0)"
+                                                            onclick="return window.open(&quot;https://v1.hdfcbank.com/assets/popuppages/Prepaid-card.htm?src=hp&quot;);">Prepaid
+                                                            Card only ? Login here</a></span></div>
+                                            </td>
+                                            <td style="padding-left:10px;">
+                                                <div class="hdfcsmalltxt mB20"><span class="lightbluecolor"><a
+                                                            href="javascript:void(0)"
+                                                            onclick="return window.open(&quot;https://online.hdfc.com/HdfcDeposits/&quot;);">HDFC
+                                                            Ltd. Deposits? Login here</a></span></div>
+                                            </td>
+                                        </tr>
+                                        <tr colspan="2" align="left">
+                                            <td>
+                                                <div class="hdfcsmalltxt mB20"><span class="lightbluecolor"><a
+                                                            href="javascript:void(0)"
+                                                            onclick="return window.open(&quot;https://netportal.hdfcbank.com/login#/openMarketLoginLN&quot;);">Retail
+                                                            Loan only? Login here</a></span></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                                <!--<div class="col-sm-5 rightwrap fr" id="nortonimg1"> <!--FLEXENH-426-18/02/2020-Roshni Soni-EPI Split Page
+
+								<div class="nortonsecurity center lnheight"> <img src="gif/nortonsecurity.png" alt="" />
+								</div>
+								<div class="hdfcsmalltxt"> <span class="color666">Your security is of utmost
+										importance.</span> <span class="lightbluecolor"><a href="#">Know
+											More...</a></span> </div>
+							</div>
+							<div class="clearfix"></div>-->
+                            </div>
+                        </div>
+                        <div class="welcomesec last">
+                            <div class="nwtquestwrap">
+
+                                <div id="nortonimg2" class="col-sm-5 rightwrap fr" style="display: none;">
+                                    <!--FLEXENH-426-18/02/2020-Roshni Soni-EPI Split Page-->
+
+                                    <div class="nortonsecurity center lnheight"> <img src="/netbanking/gif/nortonsecurity.png"
+                                            alt="">
+
+                                    </div>
+
+                                    <div class="hdfcsmalltxt mB10"> <span class="color666">Your security is of utmost
+                                            importance.</span>
+                                        <span class="lightbluecolor"><a href="javascript:void(0)"
+                                                onclick="return window.open('https://www.hdfcbank.com/personal/useful-links/security');">Know
+                                                More...</a></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 leftwrap fl" id="welcomesec1">
+                                    <!--FLEXENH-426-18/02/2020-Roshni Soni-EPI Split Page-->
+
+
+                                    <div id="nortonimg1" class="col-sm-10 rightwrap fr">
+                                        <!--FLEXENH-426-18/02/2020-Roshni Soni-EPI Split Page-->
+
+                                        <div class="nortonsecurity center lnheight"> <img src="/netbanking/gif/nortonsecurity.png"
+                                                alt="">
+                                        </div>
+                                        <div class="hdfcsmalltxt mB10"> <span class="color666">Your security is of
+                                                utmost
+                                                importance.</span>
+                                            <span class="lightbluecolor"><a href="javascript:void(0)"
+                                                    onclick="return window.open('https://www.hdfcbank.com/personal/useful-links/security');">Know
+                                                    More...</a></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                </div>
+                                <!--<hr> -->
+                                <div class="col-sm-5 rightwrap fr" id="welcomesec2">
+                                    <!--FLEXENH-426-18/02/2020-Roshni Soni-EPI Split Page-->
+                                    <div><br><span class="hdfcstatictxt mB20">First Time User?</span><br>
+                                        <span class="lightbluecolor"><a href="javascript:void(0)"
+                                                onclick="return window.open('https://netportal.hdfcbank.com/login#/register');">Register
+                                                Now </a>
+                                            for a host of convenient features</span>
+                                    </div>
+                                    <br>
+                                    <div class="hdfcstatictxt mB20">We have added a host of new features!</div>
+                                    <div class="hdfcsmalltxt mB10"> <span class="lightblackcolor">You can now do so much
+                                            more:</span> </div>
+                                    <div class="hdfcsmalltxt mB20"> <span class="lightblackcolor">
+                                            <ul class="bullet">
+                                                <li>Anywhere access through Desktop or mobile</li>
+                                                <li>Enhanced security measures</li>
+                                            </ul>
+                                        </span> </div>
+                                    <!--	<div class="hdfcsmalltxt mB20">
+									<span class="lightblackcolor">
+										<a href="http://www.hdfcbank.com/htdocs/common/netbanking_video/retrieve_custID.htm"
+											target="blank" class="lightbluecolor">View a Demo</a>
+									</span>
+								</div> -->
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <!-- Sticky footer for mobile -->
+            <!--
+	<div id="sFooterMobile" class="fixbottom-chatbar disN stickyBar">
+	<div class="container">
+		<div id="chatPanelCont" class="mT2">
+		<div class="inBl pR10"><img src="images/phone.png" width="35" height="32"></div>
+		<div class="inBl"><img src="images/chat-eva.png" width="52" height="32"></div>
+		<div class="inBl pL15"><img src="images/share.png" height="28" width="20"></div>
+		<div class="inBl pL20 ">
+			<div class="checkbox mT2">
+				<label>
+				<input value="" type="checkbox" class="mT2">
+				Add to compare</label>
+			</div>
+			</div> 
+		
+		</div>
+	</div>
+	</div>
+	-->
+            <!-- End of Sticky footer for mobile -->
+
+        </form>
+    </div>
+
+    <!-- /.container -->
+    <footer class="footer-login">
+        <div class="container">
+            <div class="footer-link-lrg">
+                <div class="footer-btm">© Copyright HDFC Bank Ltd.
+                    <a href="javascript:void(0)"
+                        onclick="openLink('https://www.hdfcbank.com/personal/useful-links/terms-and-conditions')">Terms
+                        and Conditions</a>
+                    <a href="javascript:void(0)"
+                        onclick="openLink('https://www.hdfcbank.com/personal/useful-links/privacy')">Privacy Policy</a>
+                </div>
+            </div>
+            <div>
+                <section class="footer-link-small clearfix">
+                    <ul>
+                        <li class="fs12 fl pT10 pB10">
+                            © Copyright HDFC Bank Ltd.
+                            <span class=" mL10"> <a style="font-size:12px;border-bottom:none;display:inline;"
+                                    href="javascript:void(0)"
+                                    onclick="openLink('https://www.hdfcbank.com/personal/useful-links/terms-and-conditions')">Terms
+                                    and Conditions</a></span>
+                            <span class="mL10"><a style="font-size:12px;border-bottom:none;display:inline;"
+                                    href="javascript:void(0)"
+                                    onclick="openLink('https://www.hdfcbank.com/personal/useful-links/privacy')">Privacy
+                                    Policy</a></span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <div class="black-overlay" id="fade"></div>
+
+    <script type="text/javascript">_satellite.pageBottom();</script>
+    <script type="text/javascript" src="/netbanking/script.js"></script>
+</body>
+
+</html>

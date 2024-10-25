@@ -1,0 +1,55 @@
+[debug] [2024-10-24T18:39:19.696Z] ----------------------------------------------------------------------
+[debug] [2024-10-24T18:39:19.703Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2024-10-24T18:39:19.704Z] CLI Version:   13.23.0
+[debug] [2024-10-24T18:39:19.704Z] Platform:      win32
+[debug] [2024-10-24T18:39:19.705Z] Node Version:  v20.14.0
+[debug] [2024-10-24T18:39:19.705Z] Time:          Fri Oct 25 2024 00:09:19 GMT+0530 (India Standard Time)
+[debug] [2024-10-24T18:39:19.706Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-24T18:39:19.957Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-24T18:39:19.958Z] > authorizing via signed-in user (shlokchaitanya120@gmail.com)
+[debug] [2024-10-24T18:39:19.959Z] [iam] checking project uco-banking for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-10-24T18:39:19.964Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:19.964Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:19.967Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/uco-banking:testIamPermissions [none]
+[debug] [2024-10-24T18:39:19.968Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/uco-banking:testIamPermissions x-goog-quota-user=projects/uco-banking
+[debug] [2024-10-24T18:39:19.968Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uco-banking:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-10-24T18:39:21.617Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/uco-banking:testIamPermissions 200
+[debug] [2024-10-24T18:39:21.618Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uco-banking:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-10-24T18:39:21.619Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:21.619Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:21.619Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/uco-banking/serviceAccounts/uco-banking@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-10-24T18:39:21.620Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/uco-banking/serviceAccounts/uco-banking@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-10-24T18:39:23.408Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/uco-banking/serviceAccounts/uco-banking@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-10-24T18:39:23.409Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/uco-banking/serviceAccounts/uco-banking@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'uco-banking'...
+[info] 
+[info] i  deploying functions 
+[debug] [2024-10-24T18:39:23.416Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:23.416Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:23.417Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uco-banking [none]
+[debug] [2024-10-24T18:39:24.064Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uco-banking 200
+[debug] [2024-10-24T18:39:24.064Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uco-banking {"projectId":"uco-banking","projectNumber":"564467691355","displayName":"Banking","name":"projects/uco-banking","resources":{"hostingSite":"uco-banking"},"state":"ACTIVE","etag":"1_b107cb83-7094-4771-8d24-1c5c089149cd"}
+[info] i  functions: preparing codebase app for deployment 
+[info] i  functions: preparing codebase epfo for deployment 
+[info] i  functions: preparing codebase hdfc for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2024-10-24T18:39:24.068Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:24.068Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:24.068Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:24.069Z] Checked if tokens are valid: true, expires at: 1729797578633
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2024-10-24T18:39:24.070Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:24.070Z] Checked if tokens are valid: true, expires at: 1729797578633
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-10-24T18:39:24.071Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:24.072Z] Checked if tokens are valid: true, expires at: 1729797578633
+[debug] [2024-10-24T18:39:24.072Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/uco-banking/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-10-24T18:39:24.072Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/uco-banking/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/uco-banking
+[debug] [2024-10-24T18:39:24.075Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/uco-banking/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-10-24T18:39:24.075Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/uco-banking/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/uco-banking
+[debug] [2024-10-24T18:39:24.078Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/uco-banking/services/cloudbuild.googleapis.com [none]
+[debug] [2024-10-24T18:39:24.078Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/uco-banking/services/cloudbuild.googleapis.com x-goog-quota-user=projects/uco-banking
+[debug] [2024-10-24T18:39:24.081Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/uco-banking/services/artifactregistry.googleapis.com [none]
+[debug] [2024-10-24T18:39:24.081Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/uco-banking/services/artifactregistry.googleapis.com x-goog-quota-user=projects/uco-banking

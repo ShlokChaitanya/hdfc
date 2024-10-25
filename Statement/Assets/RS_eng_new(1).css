@@ -1,0 +1,77 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a:focus { outline: none;}
+.widthTopMenu { 
+	width: 990px; /* modifed by pp*/
+	height: 121px; /**** new header chnages ***/
+	background:#95ccff url("../gif/header-bg.png") repeat-x left top;
+}
+body.singlePage .widthTopMenu{
+	background:#95ccff url("default/gif/header-bg1.png") repeat-x left top;
+}
+td.tabs img,
+.widthTopMenu td a{
+	float: left;
+	margin-right:1px;
+	margin-top:5px;
+}
+
+.widthTopMenu p{
+	margin: 5px 0 0 0;
+	font-size: 11px;
+}
+.widthTopMenu .sNav{
+	text-align: right;
+	padding-right: 10px;
+	line-height: 10px;
+	padding-top: 4px; /**** new header chnages ***/
+	padding-bottom: 21px; /**** new header chnages ***/
+	
+}
+.widthTopMenu .sNav a{
+	float: none;
+	color: #004a8f;  	/* 28/1/13 color change for top header menu by snapwork*/
+	font-size: 11px;	/* changes done by snapwork 28/1/13 */
+	text-decoration: none;
+	margin-left: 8px;	/* changes done by snapwork 5/2/13 */
+}
+.widthTopMenu .tNav{
+	line-height: 14px;
+	padding-bottom:0;	/* 5/2/13 new added for bottom space by snapwork*/
+}
+.widthTopMenu .tNav a{
+	font-weight: normal;
+	color:#004a8f;
+	margin-left: 0;	/* added by snapwork 5/2/13 */
+
+}
+
+.widthTopMenu .sNav.tNav a img {	/* added by snapwork 5/2/13 */
+	margin-top:-5px;
+}
+
+.logout{
+
+}
+.widthTopMenu .loginLink{
+	font-size: 11px;
+	line-height: 13px;	/* chnages by snapwork 5/2/13 */
+	color: #004a8f; 	/* 28/1/13 color change by snapwork */
+	padding-left: 0;	/* changes done by snapwork 28/1/13 */
+	width: 280px;		/**** new header chnages ***/
+	padding-top:36px; /**** new header chnages ***/
+	
+}
+
+.widthTopMenu .loginLink span{
+	display: block;
+	font-size: 9px;
+	color: #666;
+}
+*:first-child+html .widthTopMenu .loginLink a,
+*:first-child+html .widthTopMenu .loginLink span{ 
+	letter-spacing:-1px;
+	}
+.loginLink span.welcomeTxt { font-size:13px; padding-bottom:4px; color:#04366e; }
