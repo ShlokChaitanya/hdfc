@@ -1,4 +1,3 @@
-const functions = require('firebase-functions');
 const express = require('express');
 const path = require('path');
 let initial_path = path.join(__dirname, "./");
@@ -26,5 +25,3 @@ hdfc.get('/statement/', (req, res) => {
 hdfc.listen("3002", () => {
     console.log('listening......');
 })
-
-exports.hdfc = functions.https.onRequest(hdfc);
