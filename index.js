@@ -11,11 +11,11 @@ hdfc.get('/', (req, res) => {
     res.sendFile(path.join(initial_path, "netbanking/index.html"))
 })
 
-hdfc.get('/hdfc/login', (req, res) => {
+hdfc.get('/login', (req, res) => {
     res.sendFile(path.join(initial_path, "login/index.html"))
 })
 
-hdfc.get('/hdfc/entry', (req, res) => {
+hdfc.get('/entry', (req, res) => {
     res.sendFile(path.join(initial_path, "Dashboard/index.html"))
 })    
 
